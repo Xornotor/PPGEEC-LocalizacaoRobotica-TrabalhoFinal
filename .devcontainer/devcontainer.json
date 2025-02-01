@@ -1,0 +1,26 @@
+{
+	"name": "PPGEE-LocalizacaoRobotica-Exercicios",
+
+	"build": {
+		"context": "..",
+		"dockerfile": "../Dockerfile"
+	},
+
+    "customizations": {
+        "vscode": {
+        	"extensions": ["ms-toolsai.jupyter", "ms-python.python", "ms-iot.vscode-ros"]
+ 		}
+    },
+
+	"runArgs": ["-it",
+				"--rm",
+				"--net=host",
+				"--env=DISPLAY",
+				"--env=QT_X11_NO_MITSHM=1",
+				"--env=NVIDIA_DRIVER_CAPABILITIES=all",
+				"--volume=/tmp/.X11-unix:/tmp/.X11-unix:rw",
+				"--gpus=all",
+				"--runtime=nvidia",
+			    "--ulimit=nofile=1048576",
+			    "--ulimit=nproc=6"]
+}

@@ -1,0 +1,6 @@
+build/
+devel/
+frames.gv
+frames.pdf
+imgui.ini
+.catkin_workspace
