@@ -2,6 +2,7 @@
 
 <launch>
   <!-- gazebo args -->
+  <rosparam param="use_sim_time">true</rosparam>
   <arg name="world_name" default="$(find lar_point_cloud_dec)/worlds/lar.world"/>
   <arg name="paused" default="true" doc="Starts gazebo in paused mode" />
   <arg name="gui" default="true" doc="Starts gazebo gui" />
