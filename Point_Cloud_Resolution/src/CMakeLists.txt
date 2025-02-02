@@ -18,5 +18,5 @@ catkin_install_python(PROGRAMS scripts/glim_odom_diff.py
 if (CATKIN_ENABLE_TESTING)
   find_package(roslaunch REQUIRED)
   roslaunch_add_file_check(launch/lar_world.launch)
-  roslaunch_add_file_check(launch/lar_full_point_cloud.launch)
+  roslaunch_add_file_check(launch/lar_glim.launch)
 endif()
