@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>lar_point_cloud_dec</name>
+  <version>1.0.0</version>
+  <description>The lar_point_cloud_dec package</description>
+
+  <maintainer email="andre.paiva@ufba.br">André Paiva Conrado Rodrigues</maintainer>
+  <maintainer email="caroline.morais@ufba.br">Caroline da Silva Morais Alves</maintainer>
+  <maintainer email="matheus.nishimoto@ufba.br">Matheus Teruo Nishimoto</maintainer>
+
+
+  <license>MIT</license>
+  <author email="andre.paiva@ufba.br">André Paiva Conrado Rodrigues</author>
+  <author email="caroline.morais@ufba.br">Caroline da Silva Morais Alves</author>
+  <author email="matheus.nishimoto@ufba.br">Matheus Teruo Nishimoto</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>gazebo_plugins</exec_depend>
+  <exec_depend>gazebo_ros_control</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>glim</exec_depend>
+  <exec_depend>glim_ros</exec_depend>
+  <exec_depend>hector_gazebo_plugins</exec_depend>
+  <exec_depend>hector_geotiff_launch</exec_depend>
+  <exec_depend>hector_mapping</exec_depend>
+  <exec_depend>hector_slam</exec_depend>
+  <exec_depend>husky_gazebo</exec_depend>
+  <exec_depend>husky_navigation</exec_depend>
+  <exec_depend>rviz</exec_depend>
+
+  <test_depend>roslaunch</test_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+    <!--export path of models to gazebo enviroment-->
+    <gazebo_ros
+        gazebo_plugin_path="${prefix}/lib"
+        gazebo_model_path="${prefix}/models" />
+  </export>
+</package>

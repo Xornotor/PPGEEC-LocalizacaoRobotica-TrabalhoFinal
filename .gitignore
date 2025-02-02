@@ -1,0 +1,7 @@
+build/
+devel/
+bags/*
+frames.gv
+frames.pdf
+imgui.ini
+.catkin_workspace
